@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ProtonSEC.Templates.ThreeLayers.Data/1.0.0": {
+        "runtime": {
+          "ProtonSEC.Templates.ThreeLayers.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProtonSEC.Templates.ThreeLayers.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

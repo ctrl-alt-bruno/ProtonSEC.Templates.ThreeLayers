@@ -1,0 +1,12 @@
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/bin/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.deps.json
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/bin/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.dll
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/bin/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.pdb
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.AssemblyInfoInputs.cache
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.AssemblyInfo.cs
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.csproj.CoreCompileInputs.cache
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.sourcelink.json
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.dll
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/refint/ProtonSEC.Templates.ThreeLayers.Data.dll
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ProtonSEC.Templates.ThreeLayers.Data.pdb
+/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Data/obj/Debug/net9.0/ref/ProtonSEC.Templates.ThreeLayers.Data.dll

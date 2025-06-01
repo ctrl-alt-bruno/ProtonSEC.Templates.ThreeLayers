@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1Ji+XNWQa5o=",
+  "success": true,
+  "projectFilePath": "/home/bruno/src/ProtonSEC.Templates.ThreeLayers/src/ProtonSEC.Templates.ThreeLayers.Business/ProtonSEC.Templates.ThreeLayers.Business.csproj",
+  "expectedPackageFiles": [
+    "/home/bruno/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
