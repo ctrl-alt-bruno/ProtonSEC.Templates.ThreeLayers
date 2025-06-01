@@ -2,19 +2,19 @@ using FluentValidation;
 
 namespace ProtonSEC.Templates.ThreeLayers.Business.Models.Validation;
 
-public class ProdutoValidation : AbstractValidator<Produto>
+public class ProductValidation : AbstractValidator<Product>
 {
-	public ProdutoValidation()
+	public ProductValidation()
 	{
-		RuleFor(c => c.Nome)
+		RuleFor(c => c.Name)
 			.NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido.")
 			.Length(2, 200).WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.");
 
-		RuleFor(c => c.Descricao)
+		RuleFor(c => c.Description)
 			.NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido.")
 			.Length(2, 1000).WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.");
 
-		RuleFor(c => c.Valor)
+		RuleFor(c => c.Value)
 			.GreaterThan(0).WithMessage("O campo {PropertyName} precisa ser maior que {ComparisonValue}.");
 	}
 }

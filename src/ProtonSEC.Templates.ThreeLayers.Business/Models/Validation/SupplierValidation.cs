@@ -2,21 +2,21 @@ using FluentValidation;
 
 namespace ProtonSEC.Templates.ThreeLayers.Business.Models.Validation;
 
-public class FornecedorValidation : AbstractValidator<Fornecedor>
+public class SupplierValidation : AbstractValidator<Supplier>
 {
-	public FornecedorValidation()
+	public SupplierValidation()
 	{
-		RuleFor(c => c.Nome)
+		RuleFor(c => c.Name)
 			.NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido.")
 			.Length(2, 100).WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.");
 
-		When(x => x.TipoFornecedor == TiposFornecedores.PessoaFisica, () =>
+		When(x => x.SupplierType == SupplierTypes.Regular, () =>
 		{
-			RuleFor(x => x.Documento.Length).Equal(11)
+			RuleFor(x => x.Document.Length).Equal(11)
 				.WithMessage("O campo Documento precisa ter {ComparisonValue} caracteres e foi fornecido {PropertyValue}.");
 		});
 
-		When(x => x.TipoFornecedor == TiposFornecedores.PessoaJuridica, () =>
+		When(x => x.SupplierType == SupplierTypes.Legal, () =>
 		{
 
 		});
