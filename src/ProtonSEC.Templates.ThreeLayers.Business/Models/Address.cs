@@ -4,7 +4,7 @@ public class Address : Entity
 {
 	public string Street { get; set; } = string.Empty;
 	public string Number { get; set; } = string.Empty;
-	public string Complement { get; set; } = string.Empty;
+	public string? Complement { get; set; } = null;
 	public string PostalCode { get; set; } = string.Empty;
 	public string Region { get; set; } = string.Empty;
 	public string City { get; set; } = string.Empty;

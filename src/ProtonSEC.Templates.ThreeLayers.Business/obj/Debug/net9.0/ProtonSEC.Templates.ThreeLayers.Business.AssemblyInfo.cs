@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProtonSEC.Templates.ThreeLayers.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a69e17dfa1e41a56cb5966c4d317003d5b070900")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ce06e33d358b4833e23e22bde4c41bf114d68dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProtonSEC.Templates.ThreeLayers.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProtonSEC.Templates.ThreeLayers.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
