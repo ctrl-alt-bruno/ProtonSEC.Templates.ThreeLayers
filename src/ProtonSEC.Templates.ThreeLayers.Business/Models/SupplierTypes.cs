@@ -1,7 +1,8 @@
-namespace ProtonSEC.Templates.ThreeLayers.Business.Models;
-
-public enum SupplierTypes
+namespace ProtonSEC.Templates.ThreeLayers.Business.Models
 {
-	Regular = 1,
-	Legal = 2
+    public enum SupplierTypes
+    {
+        Regular = 1,
+        Legal = 2
+    }
 }

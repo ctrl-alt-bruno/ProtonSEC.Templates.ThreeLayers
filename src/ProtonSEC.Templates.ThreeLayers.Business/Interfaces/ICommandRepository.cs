@@ -1,11 +1,12 @@
 using ProtonSEC.Templates.ThreeLayers.Business.Models;
 
-namespace ProtonSEC.Templates.ThreeLayers.Business.Interfaces;
-
-public interface ICommandRepository<in TEntity> : IDisposable where TEntity : Entity
+namespace ProtonSEC.Templates.ThreeLayers.Business.Interfaces
 {
-	Task AddAsync(TEntity entity);
-	Task UpdateAsync(TEntity entity);
-	Task DeleteAsync(Guid id);
-	Task<int> SaveChangesAsync();
+	public interface ICommandRepository<in TEntity> : IDisposable where TEntity : Entity
+	{
+		Task AddAsync(TEntity entity);
+		Task UpdateAsync(TEntity entity);
+		Task DeleteAsync(Guid id);
+		Task<int> SaveChangesAsync();
+	}
 }

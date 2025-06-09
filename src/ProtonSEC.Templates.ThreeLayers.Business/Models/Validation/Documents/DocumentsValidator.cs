@@ -1,9 +1,10 @@
-namespace ProtonSEC.Templates.ThreeLayers.Business.Models.Validation.Documents;
-
-public static class DocumentsValidator
+namespace ProtonSEC.Templates.ThreeLayers.Business.Models.Validation.Documents
 {
-	public static bool ValidateCpf(string cpf)
-	{
-		return true;
-	}
+    public static class DocumentsValidator
+    {
+        public static bool ValidateCpf(string cpf)
+        {
+            return true;
+        }
+    }
 }

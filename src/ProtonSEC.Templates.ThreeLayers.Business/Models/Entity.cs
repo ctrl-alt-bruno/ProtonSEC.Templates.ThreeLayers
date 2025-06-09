@@ -1,7 +1,7 @@
-namespace ProtonSEC.Templates.ThreeLayers.Business.Models;
-
-public abstract class Entity
+namespace ProtonSEC.Templates.ThreeLayers.Business.Models
 {
-	public Guid Id { get; set; } = Guid.NewGuid();
+    public abstract class Entity
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+    }
 }
-

@@ -1,6 +1,7 @@
-namespace ProtonSEC.Templates.ThreeLayers.Business.Notifications;
-
-public class Notification(string message)
+namespace ProtonSEC.Templates.ThreeLayers.Business.Notifications
 {
-	public string Message { get; private set; } = message;
+    public class Notification(string message)
+    {
+        public string Message { get; private set; } = message;
+    }
 }
