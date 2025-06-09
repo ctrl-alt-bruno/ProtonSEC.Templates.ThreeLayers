@@ -9,7 +9,7 @@ public class Address : Entity
 	public string Region { get; set; } = string.Empty;
 	public string City { get; set; } = string.Empty;
 	public string State { get; set; } = string.Empty;
-	
+
 	/* EF Relational */
 	public Guid SupplierId { get; set; }
 	public Supplier? Supplier { get; set; }

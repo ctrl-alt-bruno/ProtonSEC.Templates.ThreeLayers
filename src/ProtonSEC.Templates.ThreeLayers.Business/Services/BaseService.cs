@@ -8,31 +8,31 @@ namespace ProtonSEC.Templates.ThreeLayers.Business.Services;
 
 public abstract class BaseService(INotifier notifier)
 {
-    protected bool Validate<TValidation, TEntity>(TValidation validation, TEntity? entity)
-        where TValidation : AbstractValidator<TEntity>
-        where TEntity : Entity
-    {
-        if (entity == null)
-            return false;
-        
-        ValidationResult validationResult = validation.Validate(entity);
+	protected bool Validate<TValidation, TEntity>(TValidation validation, TEntity? entity)
+		where TValidation : AbstractValidator<TEntity>
+		where TEntity : Entity
+	{
+		if (entity == null)
+			return false;
 
-        if (validationResult.IsValid)
-            return true;
-        
-        Notify(validationResult);
-        
-        return false;
-    }
+		ValidationResult validationResult = validation.Validate(entity);
 
-    private void Notify(ValidationResult validationResult)
-    {
-        foreach (ValidationFailure? error in validationResult.Errors)
-            Notify(error.ErrorMessage);
-    }
-    
-    protected void Notify(string message)
-    {
-        notifier.Handle(new Notification(message));
-    }
+		if (validationResult.IsValid)
+			return true;
+
+		Notify(validationResult);
+
+		return false;
+	}
+
+	private void Notify(ValidationResult validationResult)
+	{
+		foreach (ValidationFailure? error in validationResult.Errors)
+			Notify(error.ErrorMessage);
+	}
+
+	protected void Notify(string message)
+	{
+		notifier.Handle(new Notification(message));
+	}
 }

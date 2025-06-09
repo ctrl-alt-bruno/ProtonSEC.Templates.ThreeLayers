@@ -14,39 +14,39 @@
   </resheader>
 
   <data name="Address_Street_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_Street_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be between {MinLength} and {MaxLength} characters long.</value>
   </data>
   <data name="Address_Region_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_Region_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be between {MinLength} and {MaxLength} characters long.</value>
   </data>
   <data name="Address_PostalCode_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_PostalCode_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be {MaxLength} characters long.</value>
   </data>
   <data name="Address_City_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_City_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be between {MinLength} and {MaxLength} characters long.</value>
   </data>
   <data name="Address_State_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_State_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be between {MinLength} and {MaxLength} characters long.</value>
   </data>
   <data name="Address_Number_Required" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ser fornecido.</value>
+    <value>The field {PropertyName} is required.</value>
   </data>
   <data name="Address_Number_Length" xml:space="preserve">
-    <value>O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres.</value>
+    <value>The field {PropertyName} must be between {MinLength} and {MaxLength} characters long.</value>
   </data>
 </root>

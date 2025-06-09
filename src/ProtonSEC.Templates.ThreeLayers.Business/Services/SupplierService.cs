@@ -4,65 +4,65 @@ using ProtonSEC.Templates.ThreeLayers.Business.Models.Validation;
 
 namespace ProtonSEC.Templates.ThreeLayers.Business.Services;
 
-public class SupplierService(ISupplierRepository supplierRepository, INotifier notifier) 
-    : BaseService(notifier), ISupplierService
+public class SupplierService(ISupplierRepository supplierRepository, INotifier notifier)
+	: BaseService(notifier), ISupplierService
 {
-    public async Task AddAsync(Supplier supplier)
-    {
-        if (!Validate(new SupplierValidation(), supplier) || !Validate(new AddressValidation(), supplier.Address))
-            return;
+	public async Task AddAsync(Supplier supplier)
+	{
+		if (!Validate(new SupplierValidation(), supplier) || !Validate(new AddressValidation(), supplier.Address))
+			return;
 
-        if (supplierRepository.FindAsync(s => s.Document == supplier.Document).Result.Any())
-        {
-            Notify("The supplier already exists.");
-            return;
-        }
-        
-        await supplierRepository.AddAsync(supplier);
-    }
+		if (supplierRepository.FindAsync(s => s.Document == supplier.Document).Result.Any())
+		{
+			Notify("The supplier already exists.");
+			return;
+		}
 
-    public async Task UpdateAsync(Supplier supplier)
-    {
-        if (!Validate(new SupplierValidation(), supplier))
-            return;
+		await supplierRepository.AddAsync(supplier);
+	}
 
-        if (supplierRepository.FindAsync(s => s.Document == supplier.Document && s.Id != supplier.Id).Result.Any())
-        {
-            Notify("The supplier already exists.");
-            return;
-        }
-        
-        await supplierRepository.UpdateAsync(supplier);
-    }
+	public async Task UpdateAsync(Supplier supplier)
+	{
+		if (!Validate(new SupplierValidation(), supplier))
+			return;
 
-    public async Task DeleteAsync(Guid supplierId)
-    {
-        Supplier? supplier = await supplierRepository.GetSupplierAndProductsAndAddressAsync(supplierId);
+		if (supplierRepository.FindAsync(s => s.Document == supplier.Document && s.Id != supplier.Id).Result.Any())
+		{
+			Notify("The supplier already exists.");
+			return;
+		}
 
-        if (supplier == null)
-        {
-            Notify("The supplier does not exist.");
-            return;
-        }
+		await supplierRepository.UpdateAsync(supplier);
+	}
 
-        if (supplier.Products.Any())
-        {
-            Notify("The supplier has products.");
-            return;
-        }
-        
-        Address? address = await supplierRepository.GetSupplierAddressAsync(supplierId);
+	public async Task DeleteAsync(Guid supplierId)
+	{
+		Supplier? supplier = await supplierRepository.GetSupplierAndProductsAndAddressAsync(supplierId);
 
-        if (address != null)
-        {
-            await supplierRepository.DeleteSupplierAddress(address);
-        }
-        
-        await supplierRepository.DeleteAsync(supplierId);
-    }
+		if (supplier == null)
+		{
+			Notify("The supplier does not exist.");
+			return;
+		}
 
-    public void Dispose()
-    {
-        supplierRepository.Dispose();
-    }
-}    
+		if (supplier.Products.Any())
+		{
+			Notify("The supplier has products.");
+			return;
+		}
+
+		Address? address = await supplierRepository.GetSupplierAddressAsync(supplierId);
+
+		if (address != null)
+		{
+			await supplierRepository.DeleteSupplierAddress(address);
+		}
+
+		await supplierRepository.DeleteAsync(supplierId);
+	}
+
+	public void Dispose()
+	{
+		supplierRepository.Dispose();
+	}
+}

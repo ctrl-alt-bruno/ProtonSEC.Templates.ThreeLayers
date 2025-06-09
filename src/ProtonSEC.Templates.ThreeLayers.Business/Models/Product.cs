@@ -7,7 +7,7 @@ public class Product : Entity
 	public decimal Value { get; set; }
 	public DateTime CreationDate { get; set; }
 	public bool Active { get; set; }
-	
+
 	/* EF Relational */
 	public Guid SupplierId { get; set; }
 	public Supplier? Supplier { get; set; }
