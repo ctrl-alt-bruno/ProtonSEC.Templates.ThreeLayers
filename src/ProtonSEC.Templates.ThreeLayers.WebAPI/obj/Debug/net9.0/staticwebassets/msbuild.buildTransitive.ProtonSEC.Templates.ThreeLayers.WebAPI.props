@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/ProtonSEC.Templates.ThreeLayers.WebAPI.props" />
-</Project>
