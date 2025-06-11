@@ -18,19 +18,19 @@ namespace ProtonSEC.Templates.ThreeLayers.WebAPI.ViewModels
         public string? Complement { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public required string Region { get; set; }
+        [StringLength(10)]
+        public required string PostalCode { get; set; }
 
         [Required]
-        [StringLength(8)]
-        public required string PostalCode { get; set; }
+        [StringLength(100)]
+        public required string Region { get; set; }
 
         [Required]
         [StringLength(100)]
         public required string City { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(10)]
         public required string State { get; set; }
 
         public Guid SupplierId { get; set; }
@@ -39,14 +39,19 @@ namespace ProtonSEC.Templates.ThreeLayers.WebAPI.ViewModels
         {
             return new Address()
             {
+                Id = Id,
+                Street = Street,
+                Number = Number,
+                Complement = Complement,
+                PostalCode = PostalCode,
+                Region = Region,
                 City = City,
                 State = State,
-                Region = Region,
-                Street = Street,
-                PostalCode = PostalCode,
                 SupplierId = SupplierId,
-                Id = Id,
-                Number = Number
+                Supplier = new Supplier()
+                {
+                    Id = SupplierId
+                }
             };
         }
     }

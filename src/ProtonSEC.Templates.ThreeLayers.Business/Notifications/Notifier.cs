@@ -4,7 +4,7 @@ namespace ProtonSEC.Templates.ThreeLayers.Business.Notifications
 {
     public class Notifier : INotifier
     {
-        private readonly List<Notification> _notifications = [];
+        private readonly List<Notification> _notifications = new List<Notification>();
 
         public bool HasNotification()
         {

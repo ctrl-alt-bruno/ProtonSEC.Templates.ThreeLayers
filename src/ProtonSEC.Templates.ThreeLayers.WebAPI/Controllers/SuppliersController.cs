@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ProtonSEC.Templates.ThreeLayers.Business.Interfaces;
 using ProtonSEC.Templates.ThreeLayers.WebAPI.ViewModels;
 
 namespace ProtonSEC.Templates.ThreeLayers.WebAPI.Controllers
@@ -6,7 +7,7 @@ namespace ProtonSEC.Templates.ThreeLayers.WebAPI.Controllers
 	[Route("api/suppliers")]
 	public class SuppliersController : MyControllerBase
 	{
-		public SuppliersController()
+		public SuppliersController(INotifier notifier) : base(notifier)
 		{
 
 		}

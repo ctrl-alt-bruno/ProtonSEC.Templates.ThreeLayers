@@ -12,7 +12,7 @@ namespace ProtonSEC.Templates.ThreeLayers.WebAPI.ViewModels
         public required string Name { get; set; }
 
         [Required]
-        [StringLength(14)]
+        [StringLength(20)]
         public required string Document { get; set; }
 
         public int SupplierType { get; set; }
@@ -21,19 +21,19 @@ namespace ProtonSEC.Templates.ThreeLayers.WebAPI.ViewModels
 
         public AddressViewModel? Address { get; set; }
 
-        public IEnumerable<ProductViewModel>? Products { get; set; }
+        public IEnumerable<ProductViewModel> Products { get; set; } = new List<ProductViewModel>();
 
         public Supplier ToSupplierEntity()
         {
             return new Supplier()
             {
-                Active = Active,
-                Address = null,
-                Document = Document,
                 Id = Id,
                 Name = Name,
-                Products = [],
-                SupplierType = (SupplierTypes)SupplierType
+                Document = Document,
+                SupplierType = (SupplierTypes)SupplierType,
+                Active = Active,
+                Address = null,
+                Products = Products.Select(p => p.ToEntity()).ToList()
             };
         }
     }
